@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <base href="/Users/DELL/OneDrive/Desktop/web development/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        .sec-1 {
+            width: 98%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(211, 211, 211, 0.571);
+        }
+        .b {
+            position: absolute;
+            top: 25px;
+            left: 12px;
+            opacity: 0.8;
+        }
+        .c {
+            position: absolute;
+            top: 150px;            
+            left: 45%;
+            color: white;
+        }
+        .d {
+            position: absolute;
+            top: 165px;
+            left: 42%;
+            color: white;
+            font-size: 25px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .e {
+            position: absolute;
+            top: 215px;
+            left: 25%;
+            text-align: center;
+            color: white;
+            font-family: verdana;
+        }
+        .f {
+            position: absolute;
+            top: 300px;
+            left: 42%;
+            border: 1px hidden;
+            background-color: lightblue;
+            padding: 10px 30px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .f:hover {
+            background-color: green;
+            padding: 11px 32px;
+        }
+        .g {
+            list-style-type: none;
+            position: absolute;
+            top: 30px;
+            left: 45%;
+            overflow: hidden;
+        }
+        
+        .h {
+            float: left;
+        }
+        .h .i {
+            padding: 10px;
+            color: white;
+            margin: 10px;
+        }
+        .h:hover {
+            background-color: seagreen;
+            text-decoration: underline;
+        }
+        .i {
+            text-decoration: none;
+            font-family: monospace;
+        }
+       
+       
+        
+
+
+
+
+
+        .l {
+            position: relative;
+            top: 456px;
+            left: 12px;
+            background-color: white;
+            border: 1px hidden;
+            height: 305px;
+            width: 98%;
+        }
+        .m {
+            position: absolute;
+            top: 20px;
+            left: 44%;
+            color: darked;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+        .n {
+            position: absolute;
+            top: 105px;
+            left: 21%;
+            width: 165px;
+            height: 150px;
+            background-color: whitesmoke;
+            box-shadow: 2px 2px  rgb(231, 231, 231);
+        }
+        .o {
+            position: absolute;
+            top: 105px;
+            left: 36%;
+            width: 165px;
+            height: 150px;
+            background-color: whitesmoke;
+            box-shadow: 2px 2px  rgb(231, 231, 231);
+        }
+        .p {
+            position: absolute;
+            top: 105px;
+            left: 51%;
+            width: 165px;
+            height: 150px;
+            background-color: whitesmoke;
+            box-shadow: 2px 2px  rgb(231, 231, 231);
+        }
+        .q {
+            position: absolute;
+            top: 105px;
+            right: 20.2%;
+            width: 165px;
+            height: 150px;
+            background-color: whitesmoke;
+            box-shadow: 2px 2px  rgb(231, 231, 231);
+        }
+        .fa-pencil {
+            position: absolute;
+            top: 15px;
+            left: 45%;
+            color: green;
+            font-size: 27px;
+        }
+        .fa-lightbulb {
+            position: absolute;
+            top: 15px;
+            left: 45%;
+            color: green;
+            font-size: 27px;
+        }
+        .fa-money-check-dollar {
+            position: absolute;
+            top: 15px;
+            left: 45%;
+            color: green;
+            font-size: 27px;
+        }
+        .fa-volume-high{
+            position: absolute;
+            top: 15px;
+            left: 45%;
+            color: green;
+            font-size: 27px;
+        }
+        .r {
+            position: relative;
+            left: 11.88px;
+            top: 457.3px;
+            width: 1198.4px;
+            height: 400px;
+        }
+        .s {
+            position: absolute;
+            top: 850px;
+            left: 265px;
+            font-size: 12px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            line-height: 17px;
+        }
+        .t {
+            position: absolute;
+            top: 920px;
+            left: 265px;
+            font-size: 12px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            line-height: 17px;
+        }
+        .u {
+            position: absolute;
+            top: 1020px;
+            left: 273px;
+            border: 1px solid black;
+            background-color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        .u:hover {
+            background-color: aquamarine;
+            padding: 11px 21px;
+        }
+        .v {
+            position: absolute;
+            top: 1020px;
+            left: 455px;
+            border: 1px solid black;
+            background-color: lightgreen;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: white;
+        }
+        .v:hover {
+            background-color: green;
+            padding: 11px 21px;
+        }
+        .w {
+            position: absolute;
+            top: 800px;
+            left: 715px;
+            width: 200px;
+            height: 140px;
+            z-index: 2;
+        }
+        .x {
+            position: absolute;
+            top: 860px;
+            left: 640px;
+            width: 200px;
+            height: 140px;
+            z-index: 3;
+        }
+        .y {
+            position: absolute;
+            top: 940px;
+            left: 775px;
+            width: 190px;
+            height: 150px;
+            z-index: 1;
+        }
+        .z {
+            position: relative;
+            top: 453px;
+            left: 11.9px;
+            width: 1198.5px;
+            height: 500px;
+            background-color: white;
+        }
+        .a1 {
+            position: absolute;
+            top: 50px;
+            left: 44%;
+            color: darked;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .a2 {
+            position: absolute;
+            list-style-type: none;
+            top: 110px;
+            left: 380px;
+            padding: 0px;
+            overflow: hidden;
+        }
+        .a3 {
+            float: left;
+        }
+        .a3 .a4 {
+            display: block;
+            padding: 20px;
+            
+        }
+        .a4 {
+            text-decoration: none;
+        }
+        .a3:hover .a4 {
+            background-color: gray;
+            text-decoration: underline;
+        }
+        .a4:unvisited {
+            color: blue;
+        }
+        .a5 {
+            position: absolute;
+            top: 195px;
+            left: 250px;
+            width: 165px;
+            height: 130px;
+            cursor: pointer;
+        }
+        .a6 {
+            position: absolute;
+            top: 195px;
+            left: 429px;
+            width: 165px;
+            height: 140px;
+            cursor: pointer;
+        }
+        .a7{
+            position: absolute;
+            top: 195px;
+            left: 606px;
+            width: 165px;
+            height: 140px;
+            cursor: pointer;
+        }
+        .a8{
+            position: absolute;
+            top: 195px;
+            left: 785px;
+            width: 165px;
+            height: 140px;
+            cursor: pointer;
+        }
+        .a9 {
+            position: absolute;
+            top: 345px;
+            left: 250px;
+            width: 165px;
+            height: 140px;
+            cursor: pointer;
+        }
+        .a10 {
+            position: absolute;
+            top: 345px;
+            left: 429px;
+            width: 165px;
+            height: 140px;
+            cursor: pointer;
+        }
+        .b1 {
+            position: absolute;
+            top: 345px;
+            left: 606px;
+            width: 165px;
+            height: 140px;
+            cursor: pointer;
+        }
+        .b2 {
+            position: absolute;
+            top: 345px;
+            left: 785px;
+            width: 165px;
+            height: 140px;
+            cursor: pointer;
+        }
+        .section2 {
+            position: relative;
+            top: 15px;
+            width: 98%;
+            margin: auto;
+            height: 1500px;
+            background-color: rgba(211, 211, 211, 0.571);
+        }
+        .b3 {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            height: 550px;
+            background-color: #7c9e5a;
+        }
+        .b4 {
+            position: absolute;
+            top: 50px;
+            left: 44%;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .b5 {
+            position: absolute;
+            color: white;
+            top: 410px;
+            left: 262px;
+            width: 341px;
+            height: 60px;
+            background-color: black;
+            opacity: 0.5;
+        }
+        .b6 {
+            position: absolute;
+            color: white;
+            top: 235px;
+            left: 619px;
+            width: 338px;
+            height: 60px;
+            background-color: black;
+            opacity: 0.7;
+        }
+        .b7 {
+            position: absolute;
+            color: white;
+            top: 410px;
+            left: 619px;
+            width: 338px;
+            height: 60px;
+            background-color: black;
+            opacity: 0.7;
+        }
+        .b8 {
+            position: absolute;
+            top: 635px;
+            left: 258px;
+            width: 162.5px;
+            height: 100px;
+            background-color: white;
+        }
+        .b9 {
+            position: absolute;
+            top: 635px;
+            left: 436px;
+            width: 162.5px;
+            height: 100px;
+            background-color: white;
+        }
+        .b10 {
+            position: absolute;
+            top: 635px;
+            left: 614.5px;
+            width: 162.5px;
+            height: 100px;
+            background-color: white;
+        }
+        .c1 {
+            position: absolute;
+            top: 635px;
+            left: 791px;
+            width: 162.5px;
+            height: 100px;
+            background-color: white;
+        }
+        .c2 {
+            
+            margin-top: 30px;
+            text-align: center;
+            color: lightblue;
+            font-size: 23px;
+        }
+        .c3 {
+            margin-top: 30px;
+            text-align: center;
+            color: lightblue;
+            font-size: 23px;
+        }
+        .c4 {
+            margin-top: 30px;
+            text-align: center;
+            color: lightblue;
+            font-size: 23px;
+        }
+        .c5 {
+            margin-top: 30px;
+            text-align: center;
+            color: lightblue;
+            font-size: 23px;
+        }
+        .c6 { position: absolute;
+            top: 860px;
+            left: 45.5%;
+            color: white;
+            font-size: 17px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .c7 {
+            position: absolute;
+            top: 902px;
+            left: 47%;
+            width: 55px;
+            height: 3px;
+            background-color: white;
+        }
+        .c8 {
+            position: absolute;
+            top: 930px;
+            left: 256px;
+            width: 335px;
+            height: 250px;
+        }
+        .c9 {
+            color: white;
+            position: absolute;
+            top: 930px;
+            left: 605px;
+            height: 30px;
+            width: 158px;
+            cursor: text;
+            background-color: black;
+            opacity: 0.8;
+        }
+        .c10 {
+            color: white;
+            position: absolute;
+            top: 930px;
+            left: 780px;
+            height: 30px;
+            cursor: text;
+            background-color: black;
+            opacity: 0.8;
+        }
+        .d1 {
+            color: white;
+            position: absolute;
+            top: 980px;
+            left: 605px;
+            cursor: text;
+            background-color: black;
+            opacity: 0.8;
+        }
+        .d2 {
+            position: absolute;
+            top: 1150px;
+            left: 605px;
+            width: 100px;
+            height: 30px;
+            background-color: #7c9e5a;
+            border: 1px solid black;
+            border-radius: 15px;
+            
+        }
+    </style>
+</head>
+<body>
+    <section class="sec-1">
+        <img class="b" src="https://media.istockphoto.com/id/1455953950/photo/professional-development-programmer-typing-on-a-laptop-computer-keyboard-screens-show-coding.jpg?s=1024x1024&w=is&k=20&c=Kva9xRFJm2SfLC2dOE8NPzWaY03N6Y9TH7zwgWDXOCM=" alt="capture" width="98%" height="430px">
+        <p class="c">INTRODUCTIVE TO</p>
+        <h1 class="d">CREATIVE METEOR</h1>
+        <p class="e">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quam! <br> Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        <button class="f">DISCOVER MORE</button>
+        <ul class="g">
+            <li class="h"><a class="i" href="web 1.html">HOME</a></li>
+            <li class="h"><a class="i" href="web 1.html">ABOUT US</a></li>
+            <li class="h"><a class="i" href="web 1.html">PORTFOLIO</a></li>
+            
+            
+            <li class="h"><a class="i" href="web 1.html">BLOG</a></li>
+           
+            <li class="h"><a class="i" href="web 1.html">CONTACT US</a></li>
+        </ul>
+
+
+
+        <div class="l">
+            <h3 class="m">WHAT WE DO</h3><div style=" position: absolute;  top: 70px; width: 70px; left: 46%; height: 3.5px; background-color: black;"></div>
+
+            <div class="n">
+
+                <i class="fa-solid fa-pencil"></i>
+
+                <b><h5 style="margin-top: 50px; text-align: center; color: darked; font-size: 15px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Easy Customizations</h5></b>
+                <p style="margin-top: -15px; text-align: center; font-family: monospace;">Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Ipsa nostrum.</p>
+            </div>
+
+            <div class="o">
+
+                <i class="fa-regular fa-lightbulb"></i>
+
+                <b><h5 style="margin-top: 50px; text-align: center; color: darked; font-size: 15px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Creative Ideas</h5></b>
+                <p style="margin-top: -15px; text-align: center; font-family: monospace;">Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Ipsa nostrum.</p>
+            </div>
+
+            <div class="p">
+
+                <i class="fa-solid fa-money-check-dollar"></i>
+
+                <b><h5 style="margin-top: 50px; text-align: center; color: darked; font-size: 15px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Good Profit</h5></b>
+                <p style="margin-top: -15px; text-align: center; font-family: monospace;">Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Ipsa nostrum.</p>
+            </div>
+
+            <div class="q">
+
+                <i class="fa-solid fa-volume-high"></i>
+
+                <b><h5 style="margin-top: 50px; text-align: center; color: darked; font-size: 15px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Open To Public</h5></b>
+                <p style="margin-top: -15px; text-align: center; font-family: monospace;">Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Ipsa nostrum.</p>
+            </div>
+        </div>
+
+        <img src="images/Capture2.PNG" alt="capture2" class="r">
+        <h5 style="position: absolute; top: 785px; left: 265px; font-size: 12px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; line-height: 18px; color: white;">New offers just arrived, <br> Get it now and take profit.</h5>
+        
+        <p class="s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi  <br> neque  eveniet laborum hic consectetur provident perferendis   <br> beatae consequuntur,  amet blanditiis iusto expedita nemo cumque.</p>
+
+        <p class="t">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quo eaque <br> sequi, voluptatibus, ipsa alias aut rem impedit assumenda quod et  <br> Laboriosam beatae maiores voluptate unde.</p>
+
+        <button class="u">DISCOVER MORE</button>
+        <button class="v">PURCHASE NOW</button>
+
+        <img src="images/google.jpg" alt="google" class="w">
+
+        <img src="images/don't worry.jpg" alt="don't worry" class="x">
+
+        <img src="images/area.PNG" alt="area" class="y">
+
+        <div class="z">
+            <h3 class="a1">OUR PORTFOLIIO</h3>
+
+            <div style="position: absolute; top: 100px; left: 47%; width: 70px; height: 3px; background-color: black;"></div>
+
+            <ul class="a2">
+                <li class="a3"><a style="color: lightgreen;" class="a4" href="web 1.html">All</a></li>
+                <li class="a3"><a class="a4" href="web 1.html">Nature</a></li>
+                <li class="a3"><a class="a4" href="web 1.html">Workspace</a></li>
+                <li class="a3"><a class="a4" href="web 1.html">City</a></li>
+                <li class="a3"><a class="a4" href="web 1.html">Technology</a></li>
+            </ul>
+
+            <a href="web 1.html" target="_blank"><img src="images/moar.PNG" alt="a.j" class="a5"></a>
+
+            <a href="web 1.html" target="_blank"><img src="images/computer.png" alt="computer" class="a6"></a>
+
+            <a href="web 1.html" target="_blank"><img src="images/PC.PNG" alt="pc" class="a7"></a>
+
+            <a href="web 1.html" target="_blank"><img src="images/google.jpg" alt="google" class="a8"></a>
+
+            <a href="web 1.html" target="_blank"><img src="images/don't worry.jpg" alt="do not worry" class="a9"></a>
+
+            <a href="web 1.html" target="_blank"><img src="images/eat.gif" alt="eat" class="a10"></a>
+
+            <a href="web 1.html" target="_blank"><img src="images/flower.PNG" alt="flower" class="b1"></a>
+
+            <a href="web 1.html" target="_blank"><img src="images/headphones.avif" alt="headfones" class="b2"></a>
+
+        </div>
+
+        
+    </section>
+
+    <section class="section2">
+        <div class="b3">
+            <h3 class="b4">OUR BLOG POSTS</h3>
+            <div style="position: absolute; top: 100px; left: 47%; width: 70px; height: 3px; background-color: white;"></div>
+
+            
+            <img src="images/Camera Roll/WIN_20231229_22_35_12_Pro.jpg" alt="jutt" style="margin-top: 140px; margin-left: 262px; width: 341px; height: 330px;">
+
+            <div class="b5">
+                <b style="position: absolute; top: 5px; left: 10px;">Muhammad Azeem Jutt</b>
+                <p style="position: absolute; top: 10px; left: 10px; font-size: 15px;">Lorem ipsum dolor sit amet, <br>  At provident voluptates non!</p>
+            </div>
+
+            <img src="images/PC.PNG" alt="pc" style="position: absolute; top: 140px; left: 619px; width: 338px; height: 155px;">
+
+            <div class="b6">
+                <b style="position: absolute; top: 5px; left: 10px;">Creative & Clean Workspace</b>
+                <p style="position: absolute; top: 10px; left: 50px; font-size: 15px;">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+            </div>
+            <img src="images/visa.PNG" alt="visa card" style="position: absolute; top: 315px; left: 619px; width: 338px; height: 155px;">
+
+            <div class="b7">
+                <b style="position: absolute; top: 5px; left: 10px;">Visa Card!</b>
+                <p style="position: absolute; top: 10px; font-size: 15px; text-indent: 30px;">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Officiis, ducimus.</p>
+            </div>
+        </div>
+
+        <div class="b8">
+            <h3 class="c2">635</h3>
+            <p style="text-align: center; color: rgb(63, 63, 63); font-size: 13px; margin-top: -10px; font-family: verdana;">REGULAR VISITORS</p>
+        </div>
+
+        <div class="b9">
+            <h3 class="c3">29</h3>
+            <P style="text-align: center; color: rgb(63, 63, 63); font-size: 13px; margin-top: -10px; font-family: verdana;">FINISHED PROJECTS</P>
+        </div>
+
+        <div class="b10">
+            <h3 class="c4">729</h3>
+            <P style="text-align: center; color: rgb(63, 63, 63); font-size: 13px; margin-top: -10px; font-family: verdana;">HAPPY CLIENTS</P>
+        </div>
+        <div class="c1">
+            <h3 class="c4">43</h3>
+            <P style="text-align: center; color: rgb(63, 63, 63); font-size: 13px; margin-top: -10px; font-family: verdana;">TOTAL AWARDS</P>
+        </div>
+
+
+        <img src="images/Capture3.PNG" alt="capture3" style="position: relative; top: 820px; width: 100%; height: 450px;">
+
+        <h3 class="c6">CONTACT US</h3>
+        <div class="c7"></div>
+
+        <iframe class="c8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42426.98590416334!2d74.37854364295943!3d31.570441747105484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391911c1034797f1%3A0x4351dff66effb0fe!2sJutt%20Balochi%20Saji!5e0!3m2!1sen!2s!4v1707239637917!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form>
+            <input class="c9" type="text" id="name" name="name" placeholder="Your Name..">
+            <input class="c10" type="email" id="mail" name="mail" placeholder="YourEmail"><br><br>
+            <textarea class="d1" name="msg" id="msg" cols="44" rows="10" placeholder="Send your message to us..."></textarea><br>
+            <input class="d2" type="submit" value="SUBMIT">
+        </form>
+
+    </section>
+
+
+</body>
+</html>
